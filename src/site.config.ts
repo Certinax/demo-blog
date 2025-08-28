@@ -34,11 +34,11 @@ const config: SiteConfig = {
     },
     {
       name: "About",
-      url: "about",
+      url: "/about",
     },
     {
       name: "Archive",
-      url: "posts",
+      url: "/posts",
     },
     {
       name: "GitHub",

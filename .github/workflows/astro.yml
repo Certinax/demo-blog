@@ -68,7 +68,9 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
         run: |
-          ${{ steps.detect-package-manager.outputs.runner }} astro build
+          ${{ steps.detect-package-manager.outputs.runner }} astro build \
+          --base "/demo-blog/" \
+          --site "https://certinax.github.io/demo-blog/"
       - name: Build Pagefind Index
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} pagefind --site dist
